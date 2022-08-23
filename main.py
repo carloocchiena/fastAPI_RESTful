@@ -4,8 +4,10 @@ from typing import Optional
 
 import uvicorn
 
+
 # instantiate our FastApi application
 app = FastAPI()
+
 
 # initiate our test dataset
 videogames = [
