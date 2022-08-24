@@ -38,14 +38,7 @@ def videogame_check(videogame_id):
 async def root():
   return {'message': 'Hello world'}
 
-
-# check if a videogames is within the list
-@app.get('/videogames/{videogame_id}')
-def videogame_detail(videogame_id: int):
-  videogame_check(videogame_id)
-  return {'videogames': videogames[videogame_id]}
-
-  
+ 
 # API METHODS
 
 # GET
@@ -61,6 +54,12 @@ def videogame_list(min_rate:Optional[int]=None, max_rate:Optional[int]=None):
     return {'videogames': filtered_videogames}
     
   return {'videogames': videogames}
+
+# check if a videogames is within the list
+@app.get('/videogames/{videogame_id}')
+def videogame_detail(videogame_id: int):
+  videogame_check(videogame_id)
+  return {'videogames': videogames[videogame_id]}
 
   
 # POST
