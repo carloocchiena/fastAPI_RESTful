@@ -1,3 +1,6 @@
+### Tutorial
+Follow the step-by-step tutorial on https://www.azionadigitale.com/sviluppiamo-una-restful-api-con-python-e-fastapi/
+
 ### official docs
 https://fastapi.tiangolo.com/ 
 
